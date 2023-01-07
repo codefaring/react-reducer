@@ -27,7 +27,7 @@ export default function FruitStore() {
     <div className='text'>
       <h3>{`${infoStore.store} 상점의 판매품목 `}</h3>
       <ul>
-        {store.products.map((product) => (
+        {store.products.map((product, index) => (
           <li>{`${product.fruit}의 가격은 ${product.price}원`}</li>
         ))}
       </ul>
